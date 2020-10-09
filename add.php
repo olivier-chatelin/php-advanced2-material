@@ -3,6 +3,8 @@
 require_once 'config.php';
 require __DIR__ . '/src/models/recipe-model.php';
 
+$errors = [];
+
 if ($_SERVER["REQUEST_METHOD"] === 'POST') {
     $recipe = array_map('trim', $_POST);
 
