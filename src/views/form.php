@@ -13,7 +13,7 @@
             <p><?= $error ?></p>
         <?php endforeach; ?>
 
-        <form action="" method="post">
+        <form action="add" method="post">
             <div>
                 <label for="title">Title</label>
                 <input id="title" name="title" type="text" value="<?= $recipe['title'] ?? '' ?>">
